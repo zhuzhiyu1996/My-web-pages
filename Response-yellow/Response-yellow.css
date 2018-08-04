@@ -1,0 +1,64 @@
+/* CSS Document */
+@charset "UTF-8";
+/**
+ * Response-yellow
+ * @authors Your Name (you@example.org)
+ * @date    2018-08-02 21:18:33
+ * @version $Id$
+ */
+
+ *{
+ 	margin:0;
+ 	padding:0;
+ 	border: 0;
+}
+body{
+	
+}
+<!--清除浮动-->
+.clearfix::after{
+	content:"";
+	display:table;
+	clear:both;
+}
+.header{
+	width: 100%;
+	height: 80px;
+}
+.header span{
+	width:80px;
+	height: 80px; 
+	float: left;
+	background-color: rgba(255, 195, 0, .6);
+}
+.header ul{
+	position: absolute;
+	margin-left: 160px;
+}
+.header ul li{
+	text-decoration: none;
+	display: block;
+	width: 80px;
+	height: 80px;
+	line-height: 115px;
+	text-align: center;
+	float: left;
+	margin-left: 40px;
+	cursor: pointer;
+}
+.slide{
+	width: 100%;
+	margin: 5px auto;
+}
+.slide img{
+	max-width: 100%;
+}
+.container{
+	width: 100%;
+	height: 400px;
+	background-color: rgba(232, 232, 232, 0.7);
+}
+.slide-3{
+	width: 96%;
+	margin: 5px auto;
+}

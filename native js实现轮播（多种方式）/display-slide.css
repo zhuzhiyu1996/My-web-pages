@@ -1,0 +1,96 @@
+/* CSS Document */
+@charset "UTF-8";
+/**
+ * display实现轮播图
+ * @authors Your Name (you@example.org)
+ * @date    2018-07-17 07:52:36
+ * @version $Id$
+ */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "Arial, Helvetica, sans-serif";
+	color:#fff;
+}
+ul{
+	display: none;
+}
+.main{
+	width: 1200px;
+	height: 560px;
+	margin: 30px auto;
+	overflow: hidden;
+	position: relative;
+}
+.banner{
+	width: 1200px;
+	height: 560px;
+	overflow: hidden;
+	position: relative;
+}
+.banner-slide{
+	width: 1200px;
+	height: 560px;
+	background: center/cover no-repeat;
+	position: absolute;
+	display: none;
+	transition-timing-function: ease-in-out;
+}
+.slide-active{
+	display: block;
+}
+.slide1{
+	background-image: url(img/1.png);
+}
+.slide2{
+	background-image: url(img/2.png);
+}
+.slide3{
+	background-image: url(img/3.png);
+}
+.slide4{
+	background-image: url(img/5.png);
+}
+.button{
+	position: absolute;
+	width: 40px;
+	height: 80px;
+	left: 244px;
+	top: 50%;
+	margin-top: -40px;
+	opacity: .4;
+	background-image: url(img/arrow.png);
+}
+.prev{
+	transform: rotate(180deg);
+}
+.next{
+	left: auto;
+	right: 5px;
+}
+.button:hover{
+	opacity: 1;
+	background-color: rgba(7, 17,27,.5);
+}
+.dots{
+	position: absolute;
+	right: 36px;
+	bottom: 24px;
+	line-height: 12px;
+	text-align: right;
+	cursor: pointer;
+}
+.dots span{
+	display: inline-block;
+	margin-left: 8px;
+	width: 12px;height: 12px;
+	border-radius: 6px;
+	background: rgba(7,17,27, .4);
+	box-shadow: 0 0 0 1px rgba(255,255,255,.5) inset;
+}
+.dots span.dot-active{
+	background: rgba(255,255,255,1);
+	box-shadow: 0 0 0 2px rgba(7,17,27, .4) ;
+}
